@@ -10,7 +10,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         boolean hasWon = false;
 
-        System.out.println("🎲 Bienvenue dans le jeu de devinettes !");
+        System.out.println("Bienvenue dans le jeu de devinettes !");
         System.out.println("Devinez un nombre entre 1 et 100. Vous avez 10 essais.");
 
         while (numberOfTries < maxTries) {
@@ -29,12 +29,11 @@ public class Main {
         }
 
         if (hasWon) {
-            System.out.println("🎉 Bravo ! Vous avez deviné le bon nombre en " + numberOfTries + " essai(s) !");
+            System.out.println("Bravo ! Vous avez deviné le bon nombre en " + numberOfTries + " essai(s) !");
         } else {
-            System.out.println("❌ Perdu ! Le bon nombre était : " + numberToGuess);
+            System.out.println("Perdu ! Le bon nombre était : " + numberToGuess);
         }
 
         scanner.close();
     }
 }
-6
